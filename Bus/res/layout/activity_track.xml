@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:apiKey=""
+        android:layout_above="@+id/adView"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <Button
+        android:id="@+id/close"
+        style="@style/GeneralText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="sendClick"
+        android:text="בטל צילצול"
+        android:textColor="#FFFFFF"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/change"
+        style="@style/GeneralText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/close"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="changeClick"
+        android:text="שנה תחנה"
+        android:textColor="#FFFFFF"
+        android:typeface="serif" />
+
+    <Button
+        style="@style/GeneralText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/change"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="helpClick"
+        android:text="עזרה"
+        android:textColor="#FFFFFF"
+        android:typeface="serif" />
+
+</RelativeLayout>

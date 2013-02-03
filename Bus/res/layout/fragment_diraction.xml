@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:paddingTop="20dp" >
+
+    <ProgressBar
+        android:id="@+id/dircetionProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/choosedirectionText"
+            style="@style/GeneralText"
+            android:paddingRight="10dp"
+            android:shadowColor="#CCCCCC"
+            android:text="@string/choose_direction"
+            android:textColor="#3992B5"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dircetionsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp"
+        android:headerDividersEnabled="true"
+        tools:listitem="@android:layout/simple_list_item_1" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/noLineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:visibility="invisible" >
+
+        <ImageButton
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:src="@drawable/help" />
+
+        <TextView
+            android:id="@+id/noLineText"
+            style="@style/GeneralText"
+            android:layout_width="wrap_content"
+            android:paddingRight="10dp"
+            android:text="לא נמצא קו מתאים" />
+    </LinearLayout>
+
+</LinearLayout>

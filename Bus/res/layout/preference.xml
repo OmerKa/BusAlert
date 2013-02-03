@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="right" >
+
+    <EditTextPreference
+        android:defaultValue="1500"
+        android:key="network"
+		android:numeric="integer"
+        android:summary="מרחק מינמילי להפעלת ההתרעה"
+        android:title="רשת סלולרית" />
+
+    <EditTextPreference
+        android:defaultValue="300"
+        android:key="gps"
+		android:numeric="integer"
+        android:summary="מרחק מינמילי להפעלת ההתרעה"
+        android:title="GPS" />
+
+    <RingtonePreference
+        android:key="ringtone"
+        android:title="צליל התרעה" />
+
+</PreferenceScreen>

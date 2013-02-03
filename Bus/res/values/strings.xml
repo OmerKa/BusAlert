@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">BusAlert</string>
+    <string name="menu_settings">צלצול התרעה</string>
+    <string name="title_activity">BusAlert</string>
+    <string name="bus_number">מספר קו</string>
+    <string name="next">המשך</string>
+    <string name="help">עזרה</string>
+    <string name="choose_direction">2) בחר כיוון נסיעה</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="location_wait">ממתין למציאת מיקום לפי הרשת הסלולרית</string>
+    <string name="bus_number_instruction">1) הכנס מספר קו</string>
+    <string name="choose_stop_station">3) בחר תחנת ירידה</string>
+
+</resources>
